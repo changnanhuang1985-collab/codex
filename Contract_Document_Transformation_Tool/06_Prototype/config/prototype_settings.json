@@ -6,6 +6,6 @@
   "output_dir": "06_Prototype/generated",
   "default_document_category": "document",
   "default_period_label": "TBD_PERIOD",
-  "default_template_version": "v0.1",
-  "default_rule_version": "v0.1"
+  "default_template_version": "v0.2",
+  "default_rule_version": "v0.2"
 }

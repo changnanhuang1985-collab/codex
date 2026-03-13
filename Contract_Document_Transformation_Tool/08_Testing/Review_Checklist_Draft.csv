@@ -1,14 +1,13 @@
 CheckID,Category,CheckPoint,Severity,ReviewerRequired,Notes
-RV-001,Input,输入文件是否属于当前需求样本,High,Yes,避免误用历史文件
-RV-002,Input,客户名称是否识别正确,High,Yes,关键字段
-RV-003,Input,项目主题是否识别正确,High,Yes,关键字段
-RV-004,Input,编号是否识别正确,High,Yes,如见积编号或订单编号
-RV-005,Template,输出类别是否选择正确,High,Yes,文书型/表格型/检查型
-RV-006,Template,固定标题是否被误改,High,Yes,模板污染检查
-RV-007,Template,历史项目特有字段是否被错误继承,High,Yes,跨项目风险
-RV-008,Rule,文件名是否符合命名规则,Medium,Yes,格式检查
-RV-009,Rule,文件名中的客户名与正文是否一致,High,Yes,一致性检查
-RV-010,Rule,日期或期间是否符合当前需求,High,Yes,常见错误点
-RV-011,Output,所有必填变量是否已落位,High,Yes,禁止留占位符
-RV-012,Output,review 标记是否已生成,Medium,No,过程控制
-RV-013,Regression,规则变更后是否重新检查,High,Yes,回归控制
+RV-001,Input,确认输入文件齐全且版本正确,High,Yes,至少包含客户当前需求相关的订单类文件和见积类文件
+RV-002,Input,确认客户名称提取正确,High,Yes,需与输入文件标题和业务事实一致
+RV-003,Input,确认项目标题与项目范围提取正确,High,Yes,不得丢失年份、主题、阶段等关键信息
+RV-004,Input,确认见积号或请求编号提取正确,High,Yes,编号错误会直接导致后续文档不可用
+RV-005,Template,确认输出文档命名规则符合内部标准,High,Yes,命名必须可追踪且不能与历史产物冲突
+RV-006,Template,确认输出文档结构符合当前模板模型,High,Yes,需检查摘要文档和台账工作簿结构
+RV-007,Rule,确认字段映射规则未引入跨项目误用,High,Yes,参考输出只能作为结构参考不能误带旧项目内容
+RV-008,Rule,确认动态字段与固定文本边界清晰,High,Yes,避免把客户特定内容写入固定模板
+RV-009,Rule,确认文件名、台账字段、摘要文档三者一致,High,Yes,同一字段在所有产物中必须一致
+RV-010,Output,确认最终输出文件可打开且内容完整,High,Yes,需实际打开 DOCX 和 XLSX 文件验证
+RV-011,Output,确认评审清单已随结果包一并生成,Medium,No,便于后续 reviewer 直接使用
+RV-012,Regression,确认本次规则变更未破坏既有样例,High,Yes,如有历史基线需补做回归检查

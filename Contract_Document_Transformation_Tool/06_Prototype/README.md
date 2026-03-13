@@ -1,42 +1,40 @@
 # Prototype Runner
 
-## 1. 目的
+## Scope
 
-本目录存放 `Contract Document Transformation Tool` 的第一版可执行原型。
+This folder contains the executable prototype for the `Contract Document Transformation Tool`.
 
-当前原型重点解决：
+Prototype 2 now does the following:
+- reads the current `input` sample files
+- extracts core fields from file names and PDF metadata hints
+- generates a final result package instead of only suggested names
+- outputs real `.docx` and `.xlsx` files for review
+- produces a manifest and a Markdown execution report
 
-- 读取输入样例文件
-- 基于文件名提取第一版字段
-- 生成字段包
-- 生成建议输出文件名
-- 生成 review 清单副本
-- 生成一份原型运行结果目录
+## Current Limits
 
-## 2. 当前限制
+- PDF body extraction is still heuristic and is not yet a full text parser
+- final output content is generated from the current rule model, not from a completed customer-approved template set
+- reviewer sign-off is still mandatory before external delivery
 
-- 目前主要基于文件名做字段抽取
-- 尚未打通 PDF 正文抽取
-- 尚未直接生成最终 Word / Excel 成品
-
-## 3. 运行方式
-
-在 PowerShell 中执行：
+## Run
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\06_Prototype\Run_Prototype_1.ps1
 ```
 
-## 4. 输出位置
+## Output
 
-运行后将在以下目录生成结果：
+Each run creates a timestamped folder under:
 
 - `06_Prototype\generated\<timestamp>`
 
-其中包含：
-
+Main artifacts:
 - `request_summary.json`
 - `field_values.json`
 - `generated_filenames.csv`
 - `review_checklist.csv`
 - `prototype_report.md`
+- `final_outputs\*.docx`
+- `final_outputs\*.xlsx`
+- `final_outputs\*.json`
