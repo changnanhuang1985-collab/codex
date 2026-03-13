@@ -1,0 +1,6 @@
+RuleID,OutputCategory,Pattern,Variables,Required,Notes
+FN-001,document,<PERIOD>_<DOC_TYPE>_<CUSTOMER>_<PROJECT>,"period_label,document_category,customer_name,project_title",Yes,通用首版规则
+FN-002,document,<DOC_TYPE>_<CUSTOMER>_<PROJECT>,"document_category,customer_name,project_title",Yes,无期间时使用
+FN-003,spreadsheet,<CUSTOMER>_<PROJECT>_<PERIOD>,"customer_name,project_title,period_label",Yes,适合表格型输出
+FN-004,review_sheet,<DOC_TYPE>_<CUSTOMER>_<PERIOD>,"document_category,customer_name,period_label",Yes,适合检查类输出
+FN-005,review_pack,REVIEW_<CUSTOMER>_<PROJECT>_<VERSION>,"customer_name,project_title,template_version",No,用于review材料包
