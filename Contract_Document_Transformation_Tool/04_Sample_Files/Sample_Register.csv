@@ -1,0 +1,6 @@
+SampleID,SampleType,FilePath,DocumentType,ProjectOrSource,Industry,RoleInProject,PairingStatus,Desensitized,Notes
+SMP-001,real_input,04_Sample_Files/01_Input_Samples/注文書兼請書　伊藤忠商事株式会社向け人事システム 2025年年末調整対応Ph4_所得税是正対応.pdf,PDF Order Form,Current Request,HR / Tax,Requirement Input,reference_based,No,当前真实需求输入
+SMP-002,real_input,04_Sample_Files/01_Input_Samples/見積書_26Q2200065_伊藤忠商事株式会社向け人事システム 2025年年末調整対応Ph4所得税是正対応.pdf,PDF Estimate,Current Request,HR / Tax,Requirement Input,reference_based,No,当前真实需求输入
+SMP-003,reference_output,04_Sample_Files/02_Output_Samples/20260401-20260630　再委託先承諾申請書_ハイシンクジャパン様 - 伊藤忠商事株式会社向け FY26 MHANA アプリ保守.doc,DOC Internal Contract Form,Historical Project,Application Maintenance,Template Reference,not_direct_pair,No,用于参考内部契约文档格式
+SMP-004,reference_output,04_Sample_Files/02_Output_Samples/伊藤忠商事様向けFY25MHANAアプリ保守（2月分）.xlsx,XLSX Management Sheet,Historical Project,Application Maintenance,Template Reference,not_direct_pair,No,用于参考台账与命名习惯
+SMP-005,reference_output,04_Sample_Files/02_Output_Samples/原籍確認シート_ハイシンクジャパン(202604)_FY26 MHANA アプリ保守.xls,XLS Legacy Review Sheet,Historical Project,Application Maintenance,Template Reference,not_direct_pair,No,用于参考检查类输出样式
