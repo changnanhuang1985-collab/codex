@@ -35,6 +35,7 @@
 - `01_Requirements`
 - `02_Solution_Design`
 - `03_AI_Project_Team`
+- `04_Sample_Files`
 
 ## 4. 推荐阅读顺序
 
@@ -47,6 +48,7 @@
 5. `02_Solution_Design/Template_Extraction_Strategy.md`
 6. `02_Solution_Design/Quality_Control_and_Review_Design.md`
 7. `03_AI_Project_Team/README.md`
+8. `04_Sample_Files/README.md`
 
 ## 5. 一句话说明
 
