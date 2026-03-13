@@ -1,0 +1,10 @@
+ステークホルダー,所属,役割,関心度,主責任,主なコミュニケーション
+Customer_IT_Manager,顧客,プロジェクトスポンサー,高,意思決定および承認,週次報告
+Customer_Procurement_Lead,顧客,業務責任者,高,業務要件確認,ワークショップ / レビュー
+Customer_S4_Team,顧客,ERP チーム,高,S/4 側 IF 整合,設計レビュー
+Customer_Ariba_Team,顧客,Ariba チーム,高,Ariba 側データ / API 整合,設計レビュー
+Integration_PMO,ベンダ,PMO,高,進捗 / 課題 / 会議運営,日次フォロー
+Integration_Architecture_Lead,ベンダ,アーキテクト,高,技術構想 / アーキ設計,アーキレビュー
+Integration_Development_Lead,ベンダ,開発責任者,高,詳細設計 / 開発成果物管理,実装レビュー
+Integration_Test_Lead,ベンダ,テスト責任者,中,試験計画 / 品質管理,試験レビュー
+Operations_Representative,ベンダ,運用支援,中,引継ぎ / 初期運用観点整理,運用レビュー

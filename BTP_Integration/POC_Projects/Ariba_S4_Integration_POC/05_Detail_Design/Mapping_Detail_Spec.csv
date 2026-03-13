@@ -1,0 +1,11 @@
+SpecID,IF_ID,送信元 XPath / 項目,受信先 XPath / 項目,種別,変換内容,デフォルト値,エラー時扱い
+DTL-MAP-001,IF-AR-S4-001,/Supplier/Id,/BusinessPartner/BusinessPartner,Direct,前後空白除去,,必須欠落時エラー
+DTL-MAP-002,IF-AR-S4-001,/Supplier/Name,/BusinessPartner/OrganizationBPName1,Direct,80 文字以内へ切詰め,,必須欠落時エラー
+DTL-MAP-003,IF-AR-S4-001,/Supplier/Country,/BusinessPartner/Country,ValueMapping,VM_COUNTRY を利用,,変換不可時エラー
+DTL-MAP-004,IF-AR-S4-001,/Supplier/PostalCode,/BusinessPartner/PostalCode,Direct,ハイフン形式を正規化,,形式不正は警告
+DTL-MAP-005,IF-AR-S4-002,/Order/Header/OrderId,/A_PurchaseOrder/PurchaseOrderExternalReference,Direct,そのまま連携,,必須欠落時エラー
+DTL-MAP-006,IF-AR-S4-002,/Order/Header/SupplierId,/A_PurchaseOrder/Supplier,Lookup,サプライヤキャッシュ照合,,未登録時エラー
+DTL-MAP-007,IF-AR-S4-002,/Order/Header/Currency,/A_PurchaseOrder/DocumentCurrency,Direct,ISO コード大文字化,JPY,不正値時エラー
+DTL-MAP-008,IF-AR-S4-002,/Order/Items/Item[*]/Quantity,/A_PurchaseOrderItem/OrderQuantity,Direct,数値変換,0,数値変換不可時エラー
+DTL-MAP-009,IF-AR-S4-002,/Order/Items/Item[*]/Plant,/A_PurchaseOrderItem/Plant,ValueMapping,VM_PLANT を利用,,変換不可時エラー
+DTL-MAP-010,IF-AR-S4-003,/Response/PurchaseOrder,/AribaResponse/OrderId,Direct,そのまま返却,,必須欠落時エラー

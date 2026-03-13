@@ -1,0 +1,9 @@
+ConfigID,種別,名称,環境,設定値パターン,管理者,備考
+CFG-001,Endpoint,ARIBA_SUPPLIER_API,DEV,https://<host>/supplier,Integration Team,外部化パラメータ
+CFG-002,Endpoint,S4_SUPPLIER_API,DEV,https://<host>/sap/opu/odata4/...,Basis / Integration,OAuth または技術ユーザ
+CFG-003,Endpoint,S4_PO_API,DEV,https://<host>/sap/opu/odata4/...,Basis / Integration,購買 API endpoint
+CFG-004,Credential,ARIBA_CRED,ALL,SecureStoreAlias,Security Admin,CPI secure store 管理
+CFG-005,Credential,S4_OAUTH,ALL,SecureStoreAlias,Security Admin,トークン認証用
+CFG-006,Parameter,ALERT_MAIL_TO,ALL,distribution-list@example.com,PMO / Support,通知先
+CFG-007,Parameter,TRACE_ENABLED,NONPROD,true / false,Integration Lead,本番は false を原則
+CFG-008,Parameter,REPROCESS_ALLOWED,ALL,true / false,Operations Lead,IF 単位で制御

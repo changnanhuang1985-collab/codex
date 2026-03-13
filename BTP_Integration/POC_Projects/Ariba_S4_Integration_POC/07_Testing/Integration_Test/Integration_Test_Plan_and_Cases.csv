@@ -1,0 +1,7 @@
+試験ID,シナリオ,E2E フロー,前提条件,期待結果,優先度,担当,ステータス
+IT-001,サプライヤ連携正常,Ariba -> CPI -> S/4,Ariba / S4 endpoint 利用可,サプライヤが作成または更新され MPL で追跡可能,高,tu,Planned
+IT-002,サプライヤ入力不正,Ariba -> CPI,必須項目欠落 payload,業務エラーで停止し S/4 更新なし,高,tu,Planned
+IT-003,購買発注正常,Ariba -> CPI -> S/4,有効な PO メッセージ,S/4 側で購買発注作成および応答記録,高,tu,Planned
+IT-004,購買発注 timeout,Ariba -> CPI -> S/4,S/4 timeout を疑似発生,技術エラー記録と通知経路起動,高,tu,Planned
+IT-005,購買応答返却,S/4 -> CPI -> Ariba,S/4 側応答あり,Ariba へ正規化応答返却,中,tu,Planned
+IT-006,再処理シナリオ,CPI retry path,業務不備修正済み,証跡を残して再送成功,中,tu,Planned

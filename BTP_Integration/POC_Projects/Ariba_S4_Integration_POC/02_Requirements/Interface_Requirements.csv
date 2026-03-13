@@ -1,0 +1,5 @@
+IF_ID,IF名称,送信元,受信先,概要,トリガー,データ形式,優先度,備考
+IF-AR-S4-001,サプライヤマスタ連携,Ariba,S/4HANA,サプライヤ基本属性を S/4 形式へ変換して連携,API / Event,JSON / XML,高,マスタ系の代表 IF
+IF-AR-S4-002,購買トランザクション連携,Ariba,S/4HANA,購買依頼または購買発注関連データを連携,API / Event,JSON,高,業務トランザクション系 IF
+IF-AR-S4-003,購買応答返却連携,S/4HANA,Ariba,S/4 側処理結果を Ariba へ返却,API / Batch,JSON,中,応答系 IF
+IF-AR-S4-004,エラー通知連携,CPI,Mail / Alert,例外発生時の通知および調査導線を提供,Exception event,Text / JSON,中,監視支援用

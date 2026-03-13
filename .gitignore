@@ -1,0 +1,9 @@
+_ppt_extract/
+_ppt_verify/
+_ppt_verify_final/
+_ppt_work/
+_ppt_work_final/
+*.log
+slide*_text.txt
+slide*_full.xml
+*.zip

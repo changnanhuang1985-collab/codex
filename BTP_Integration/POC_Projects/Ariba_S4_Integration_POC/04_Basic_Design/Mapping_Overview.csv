@@ -1,0 +1,11 @@
+MappingID,IF_ID,送信元項目,受信先項目,変換種別,変換ルール,備考
+MAP-001,IF-AR-S4-001,Ariba.SupplierID,S4.BusinessPartner,Direct,前後空白除去のうえ文字列として連携,主業務キー
+MAP-002,IF-AR-S4-001,Ariba.SupplierName,S4.OrganizationName,Direct,最大 80 文字に制限,空値はエラー
+MAP-003,IF-AR-S4-001,Ariba.Country,S4.Country,ValueMapping,ISO 国コード変換表を利用,統制対象
+MAP-004,IF-AR-S4-001,Ariba.PaymentTerms,S4.PaymentTerms,ValueMapping,支払条件マッピング表を利用,中央管理
+MAP-005,IF-AR-S4-002,Ariba.OrderID,S4.PurchaseOrderExternalID,Direct,元 ID を保持,追跡キー
+MAP-006,IF-AR-S4-002,Ariba.SupplierID,S4.Supplier,Lookup,サプライヤマスタキャッシュ照合,未存在時エラー
+MAP-007,IF-AR-S4-002,Ariba.Currency,S4.DocumentCurrency,Direct,大文字正規化,ISO 3 桁
+MAP-008,IF-AR-S4-002,Ariba.LineItems[*],S4.PurchaseOrderItem[*],Structure,明細単位で繰返し変換,順序保持
+MAP-009,IF-AR-S4-003,S4.PurchaseOrder,SupplierResponse.OrderID,Direct,そのまま返却,応答キー
+MAP-010,IF-AR-S4-003,S4.Status,SupplierResponse.Status,ValueMapping,S4 から Ariba へのステータス変換,統制対象

@@ -1,0 +1,11 @@
+分類,確認項目,必須,担当,ステータス,備考
+業務,サプライヤ連携シナリオを説明済み,Yes,Business Lead,Open,
+業務,購買トランザクション連携シナリオを説明済み,Yes,Business Lead,Open,
+業務,エラー処理フローを説明済み,Yes,Business Lead,Open,
+設計,アーキテクチャレビュー完了,Yes,AK,Open,
+設計,IF 設計成果物納品済み,Yes,田内,Open,
+試験,単体 / 結合試験証跡を添付済み,Yes,tu,Open,
+試験,未解決不具合を顧客と共有済み,Yes,田内,Open,
+運用,監視 / 再処理方針を説明済み,Yes,yu,Open,
+受入,POC の対象範囲 / 非対象範囲を明示済み,Yes,shishi,Open,
+受入,受入コメントを記録済み,Yes,田内,Open,
