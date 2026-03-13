@@ -26,6 +26,8 @@
   - 命名規約
 - `09_Delivery_Governance_Standards.md`
   - ドキュメント統制、承認、移行、納品管理標準
+- `10_Git_CICD_and_AI_Governance_Standards.md`
+  - `Git`、`CI/CD`、`AI` 協作使用の統制標準
 
 ## 想定利用シーン
 
