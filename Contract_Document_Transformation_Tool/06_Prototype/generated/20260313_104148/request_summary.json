@@ -1,0 +1,29 @@
+﻿{
+    "project_name":  "Contract Document Transformation Tool",
+    "run_timestamp":  "20260313_104148",
+    "input_files":  [
+                        "注文書兼請書　伊藤忠商事株式会社向け人事システム 2025年年末調整対応Ph4_所得税是正対応.pdf",
+                        "見積書_26Q2200065_伊藤忠商事株式会社向け人事システム 2025年年末調整対応Ph4所得税是正対応.pdf"
+                    ],
+    "reference_output_files":  [
+                                   "20260401-20260630　再委託先承諾申請書_ハイシンクジャパン様 - 伊藤忠商事株式会社向け FY26 MHANA アプリ保守.doc",
+                                   "伊藤忠商事様向けFY25MHANAアプリ保守（2月分）.xlsx",
+                                   "原籍確認シート_ハイシンクジャパン(202604)_FY26 MHANA アプリ保守.xls"
+                               ],
+    "extracted_metadata":  {
+                               "run_timestamp":  "20260313_104148",
+                               "customer_name":  "伊藤忠商事株式会社向け人事システム",
+                               "project_title":  "伊藤忠商事株式会社向け人事システム 2025年年末調整対応Ph4所得税是正対応",
+                               "request_or_estimate_no":  "26Q2200065",
+                               "input_document_types":  [
+                                                            "注文書兼請書　伊藤忠商事株式会社向け人事システム",
+                                                            "見積書"
+                                                        ],
+                               "period_label":  "TBD_PERIOD",
+                               "document_category":  "document",
+                               "template_version":  "v0.1",
+                               "rule_version":  "v0.1",
+                               "input_file_count":  2,
+                               "reference_output_file_count":  3
+                           }
+}

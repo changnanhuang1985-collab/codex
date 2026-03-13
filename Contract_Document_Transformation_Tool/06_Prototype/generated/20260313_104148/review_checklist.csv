@@ -1,0 +1,14 @@
+CheckID,Category,CheckPoint,Severity,ReviewerRequired,Notes
+RV-001,Input,输入文件是否属于当前需求样本,High,Yes,避免误用历史文件
+RV-002,Input,客户名称是否识别正确,High,Yes,关键字段
+RV-003,Input,项目主题是否识别正确,High,Yes,关键字段
+RV-004,Input,编号是否识别正确,High,Yes,如见积编号或订单编号
+RV-005,Template,输出类别是否选择正确,High,Yes,文书型/表格型/检查型
+RV-006,Template,固定标题是否被误改,High,Yes,模板污染检查
+RV-007,Template,历史项目特有字段是否被错误继承,High,Yes,跨项目风险
+RV-008,Rule,文件名是否符合命名规则,Medium,Yes,格式检查
+RV-009,Rule,文件名中的客户名与正文是否一致,High,Yes,一致性检查
+RV-010,Rule,日期或期间是否符合当前需求,High,Yes,常见错误点
+RV-011,Output,所有必填变量是否已落位,High,Yes,禁止留占位符
+RV-012,Output,review 标记是否已生成,Medium,No,过程控制
+RV-013,Regression,规则变更后是否重新检查,High,Yes,回归控制
